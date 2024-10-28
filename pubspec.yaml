@@ -9,8 +9,13 @@ environment:
   sdk: ^3.5.3
 
 dependencies:
+  cached_network_image: ^3.4.1
   flutter:
     sdk: flutter
+  flutter_dotenv: ^5.2.1
+  http: ^1.2.2
+  pokeman_cg_sdk:
+    path: ./packages/pokeman_cg_sdk
 
 dev_dependencies:
   flutter_test:
@@ -20,3 +25,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - .env
